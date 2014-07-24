@@ -9,13 +9,10 @@ function solution($A) {
     $min = 2001;
 
     for($i=0; $i<$n-1; $i++){
-        var_dump("***");
-        var_dump($i);
         $sx += $A[$i];
         $dx -= $A[$i];
         if(abs($sx-$dx) < $min)
             $min = abs($sx-$dx);
-        var_dump($min);
     }
 
     return $min;
