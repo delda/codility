@@ -1,8 +1,10 @@
 <?php
 
+// example
 $X = 10;
 $Y = 85;
 $D = 30;
+// solution: 3
 
 function solution($X, $Y, $D) {
     $mod  = ($Y - $X) % $D;
