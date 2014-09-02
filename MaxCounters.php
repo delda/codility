@@ -1,13 +1,5 @@
 <?php
 
-/**
- * Test:
- *  66% https://codility.com/demo/results/demoFSRHP7-BXU/
- *  88% https://codility.com/demo/results/demo35S8ZP-8YX/
- *
- * 100% https://codility.com/demo/results/demoDC2GBQ-4HN/
- */
-
 $N = 5;
 $A = array(3, 4, 4, 6, 1, 4, 4);
 
