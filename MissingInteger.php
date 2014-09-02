@@ -1,12 +1,5 @@
 <?php
 
-/**
- * Test:
- *  77% https://codility.com/demo/results/demoVNM5KK-NM9/
- *
- * 100% https://codility.com/demo/results/demoD5BEDF-AFW/
- */
-
 $A = array(1,3,6,4,1,2);
 
 function solution($A) {
