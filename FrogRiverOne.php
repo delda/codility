@@ -1,7 +1,5 @@
 <?php
 
-// https://codility.com/demo/results/demoVQWP73-ERN/
-
 $X = 5;
 $A = array(1,3,1,4,2,3,5,4,6);
 
