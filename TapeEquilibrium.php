@@ -1,6 +1,8 @@
 <?php
 
+// example
 $A = array(3,1,2,4,3);
+// expected: 1
 
 function solution($A) {
     $n = sizeof($A);
