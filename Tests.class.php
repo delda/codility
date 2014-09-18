@@ -18,11 +18,13 @@ class Tests {
                 $i++;
             }while(!$findFile && $i < $sizeOfFiles);
             if(!$findFile){
-                throw new Exception("File '$programName.php' not found!");
+                echo "File '$programName.php' not found!".PHP_EOL.PHP_EOL;
+                exit;
             }
             include_once "$programName.php";
         }else{
-            throw new Exception("Undefined parameter 1!");
+            echo "Undefined parameter 1!".PHP_EOL.PHP_EOL;
+            exit;
         }
     }
 
