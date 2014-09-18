@@ -26,6 +26,6 @@ function solution($X, $A) {
 
 echo solution($X, $A);
 echo "\n";
-echo "\n";
+
 echo solution($Y, $B);
 echo "\n";
