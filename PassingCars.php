@@ -20,3 +20,4 @@ function solution($A) {
 
 echo solution($A);
 echo "\n";
+
