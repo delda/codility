@@ -40,15 +40,19 @@ class Tests {
         }
 
         $startTime = microtime(true);
-        $resultDetected = solution($params);
+        if(gettype($params) == 'array' && array_keys($params) > 1){
+            $resultDetected = call_user_func_array('solution', $params);
+        }else{
+            $resultDetected = solution($params);
+        }
         $endTime = microtime(true);
         $time = sprintf("%.06f", $endTime - $startTime);
         $memory = $this->getMemoryUsage();
 
         echo "Time: $time; Memory: $memory".PHP_EOL;
 
-        $typeOfDetected = gettype($resultDetected);
-        $typeOfExpected = gettype($resultExpected);
+        $typeOfDetected = isset($resultDetected) ? gettype($resultDetected) : 'null';
+        $typeOfExpected = isset($resultExpected) ? gettype($resultExpected) : 'null';
         if( $typeOfDetected != $typeOfExpected){
             $failure = true;
             $error_message = "The type expected is different from detected!";
