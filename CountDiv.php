@@ -43,5 +43,6 @@ function solution($A, $B, $K) {
     return $max - $min + $bonus;
 }
 
+
 echo solution($A, $B, $K);
 echo "\n";
