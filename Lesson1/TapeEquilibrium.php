@@ -1,8 +1,12 @@
 <?php
 
-// example
-$A = array(3,1,2,4,3);
-// expected: 1
+/**
+ * TapeEquilibrium
+ *
+ *  Minimize the value |(A[0] + ... + A[P-1]) - (A[P] + ... + A[N-1])|.
+ */
+
+include '../Tests.class.php';
 
 function solution($A) {
     $n = sizeof($A);
@@ -20,5 +24,8 @@ function solution($A) {
     return $min;
 }
 
-echo solution($A);
-echo "\n";
+$test = new Tests('TapeEquilibrium');
+
+$A = array(3,1,2,4,3);
+$result = 1;
+$test->run(array($A), $result);
