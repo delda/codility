@@ -3,10 +3,10 @@
 /**
  * PermMissingElem
  *
- * Find the missing element in a given permutation.
+ *  Find the missing element in a given permutation.
  */
 
-include '../Tests.class.php';
+include '../../Tests.class.php';
 
 function solution($A) {
     $sizeOfA = sizeof($A);
