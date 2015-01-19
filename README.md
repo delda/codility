@@ -4,36 +4,36 @@
 In this repository you can find my answers to [Codility][codility site hp] [lessons][codility site lessons] and [challengers][codility site challengers] written in PHP.
 
 ##### Lesson 1: [Time Complexity][time complexity]
-* [TapeEquilibrium]()
-* [FrogJmp]()
+* [TapeEquilibrium]
+* [FrogJmp]
 * [PermMissingElem]
 
 ##### Lesson 2: [Counting Elements][counting elements]
-* [PermCheck]()
-* [FrogRiverOne]()
-* [MissingInteger]()
-* [MaxCounters]()
+* [PermCheck]
+* [FrogRiverOne]
+* [MissingInteger]
+* [MaxCounters]
 
 ##### Lesson 3: [Prefix Sums][prefix sums]
-* [PassingCars]()
-* [MinAvgTwoSlice]()
-* [CountDiv]()
-* [GenomicRangeQuery]()
+* [PassingCars]
+* [MinAvgTwoSlice]
+* [CountDiv]
+* [GenomicRangeQuery]
 
 ##### Lesson 4: [Sorting][sorting]
-* [MaxProductOfThree]()
-* [Triangle]()
-* [Distinct]()
+* [MaxProductOfThree]
+* [Triangle]
+* [Distinct]
 
-##### Lesson 5: [Stacks and Queues][]
-* [Brackets]()
-* [Nesting]()
-* [StoneWall]()
-* [Fish]()
+##### Lesson 5: [Stacks and Queues][stacks and queues]
+* [Brackets]
+* [Nesting]
+* [StoneWall]
+* [Fish]
 
-##### Lesson 6: [Leader]()
-* [Dominator]()
-* [EquiLeader]()
+##### Lesson 6: [Leader][leader]
+* [Dominator]
+* [EquiLeader]
 
 
 [codility site hp]:          https://codility.com/
@@ -44,8 +44,8 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 [counting elements]:         https://codility.com/programmers/lessons/2
 [prefix sums]:               https://codility.com/programmers/lessons/3
 [sorting]:                   https://codility.com/programmers/lessons/4
-[Stacks and Queues]:         https://codility.com/programmers/lessons/5
-[Leader]:                    https://codility.com/programmers/lessons/6
+[stacks and queues]:         https://codility.com/programmers/lessons/5
+[leader]:                    https://codility.com/programmers/lessons/6
 
 [TapeEquilibrium]:           https://github.com/delda/codility/blob/master/src/Lesson1/TapeEquilibrium.php
 [FrogJmp]:                   https://github.com/delda/codility/blob/master/src/Lesson1/FrogJmp.php
