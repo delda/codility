@@ -1,8 +1,12 @@
 <?php
 
-// example
-$A = array(2,3,1,5);
-// expected: 4
+/**
+ * PermMissingElem
+ *
+ * Find the missing element in a given permutation.
+ */
+
+include '../Tests.class.php';
 
 function solution($A) {
     $sizeOfA = sizeof($A);
@@ -14,6 +18,8 @@ function solution($A) {
     return intval($sumOfValues);
 }
 
+$test = new Tests('PermMissingElem');
 
-echo solution($A);
-echo "\n";
+$A = array(2,3,1,5);
+$result = 4;
+$test->run(array($A), $result);
