@@ -1,6 +1,12 @@
 <?php
 
-include '../Tests.class.php';
+/**
+ * FrogJmp
+ *
+ *  Count minimal number of jumps from position X to Y.
+ */
+
+include '../../Tests.class.php';
 
 function solution($X, $Y, $D) {
     $mod  = ($Y - $X) % $D;
