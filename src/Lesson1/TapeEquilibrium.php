@@ -6,7 +6,7 @@
  *  Minimize the value |(A[0] + ... + A[P-1]) - (A[P] + ... + A[N-1])|.
  */
 
-include '../Tests.class.php';
+include '../../Tests.class.php';
 
 function solution($A) {
     $n = sizeof($A);
