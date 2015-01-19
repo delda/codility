@@ -1,10 +1,6 @@
 <?php
 
-// example
-$X = 10;
-$Y = 85;
-$D = 30;
-// solution: 3
+include '../Tests.class.php';
 
 function solution($X, $Y, $D) {
     $mod  = ($Y - $X) % $D;
@@ -15,5 +11,10 @@ function solution($X, $Y, $D) {
     return $diff;
 }
 
-echo solution($X, $Y, $D);
-echo "\n";
+$test = new Tests('FrogJmp');
+
+$X = 10;
+$Y = 85;
+$D = 30;
+$result = 3;
+$test->run(array($X, $Y, $D), $result);
