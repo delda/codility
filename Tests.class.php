@@ -7,19 +7,19 @@ class Tests {
     public function __construct($programName = null){
         // Controllo del nome della fuzione da richiamare
         if($programName){
-            $path = getcwd();
-            $files = glob("$path/*.php");
-            $sizeOfFiles = sizeof($files);
-            $i = 0;
-            $findFile = false;
-            do{
-                if(strpos($files[$i], "$programName.php"))
-                    $findFile = true;
-                $i++;
-            }while(!$findFile && $i < $sizeOfFiles);
-            if(!$findFile){
+            $t = debug_backtrace();
+            if(!file_exists($t[0]['file'])){
                 echo "File '$programName.php' not found!".PHP_EOL.PHP_EOL;
                 exit;
+            }
+            $path = dirname($t[0]['file']);
+            $file = str_replace($path.'/', '', $t[0]['file']);
+            $arg = $t[0]['args'];
+            if(!isset($arg[0])){
+                echo "Mandatory option no included!".PHP_EOL.PHP_EOL;
+                exit;
+            }elseif($arg[0].'.php' != $file){
+                echo "WARNING: Call ($arg[0]) and caller ($file) do not match!".PHP_EOL.PHP_EOL;
             }
             include_once "$programName.php";
         }else{
@@ -40,20 +40,23 @@ class Tests {
         }
 
         $startTime = microtime(true);
+        $startMem = memory_get_usage();
         if(gettype($params) == 'array' && array_keys($params) > 1){
             $resultDetected = call_user_func_array('solution', $params);
         }else{
             $resultDetected = solution($params);
         }
         $endTime = microtime(true);
-        $time = sprintf("%.06f", $endTime - $startTime);
-        $memory = $this->getMemoryUsage();
+        $endMem = memory_get_usage();
+
+        $time = sprintf("%.06f sec.", $endTime - $startTime);
+        $memory = $this->getMemoryUsage($endMem - $startMem);
 
         echo "Time: $time; Memory: $memory".PHP_EOL;
 
         $typeOfDetected = isset($resultDetected) ? gettype($resultDetected) : 'null';
         $typeOfExpected = isset($resultExpected) ? gettype($resultExpected) : 'null';
-        if( $typeOfDetected != $typeOfExpected){
+        if($typeOfDetected != $typeOfExpected){
             $failure = true;
             $error_message = "The type expected is different from detected!";
         }else{
@@ -63,6 +66,14 @@ class Tests {
             }else{
                 $failure = false;
             }
+        }
+        if(gettype($resultExpected) == 'array'){
+            $resultExpected = print_r($resultExpected, true);
+            $resultExpected = str_replace("\n", '', $resultExpected);
+        }
+        if(gettype($resultDetected) == 'array'){
+            $resultDetected = print_r($resultDetected, true);
+            $resultDetected = str_replace("\n", '', $resultDetected);
         }
 
         if($failure){
@@ -75,9 +86,10 @@ class Tests {
         echo PHP_EOL.PHP_EOL.PHP_EOL;
     }
 
-    public function getMemoryUsage(){
-        $unit = array('b','Kb','Mb','Gb','Tb','Pb');
-        $size = memory_get_usage();
+    public function getMemoryUsage($size){
+        $unit = array('B','KB','MB','GB','TB','PB');
+        if(!isset($size))
+            $size = memory_get_usage();
         return @round($size/pow(1024,($i=floor(log($size,1024)))),2).' '.$unit[$i];
     }
 }
