@@ -1,12 +1,12 @@
 <?php
 
+/**
+ * FrogRiverOne
+ *
+ *  Find the earliest time when a frog can jump to the other side of a river.
+ */
 
-$X = 5;
-$A = array(1,3,1,4,2,3,5,4,6);
-
-// arithmetic sequences
-$Y = 9;
-$B = array(1,2,3,4,5,6,7,8,9,10);
+include '../../Tests.class.php';
 
 function solution($X, $A) {
     $arraySize = sizeof($A);
@@ -24,8 +24,14 @@ function solution($X, $A) {
     return -1;
 }
 
-echo solution($X, $A);
-echo "\n";
+$test = new Tests('FrogRiverOne');
 
-echo solution($Y, $B);
-echo "\n";
+$X = 5;
+$A = array(1,3,1,4,2,3,5,4,6);
+$result = 6;
+$test->run(array($X, $A), $result);
+
+$Y = 9;
+$B = array(1,2,3,4,5,6,7,8,9,10);
+$result = 8;
+$test->run(array($Y, $B), $result);
