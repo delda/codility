@@ -1,6 +1,12 @@
 <?php
 
-$A = array(1,3,6,4,1,2);
+/**
+ * MissingInteger
+ *
+ *  Find the minimal positive integer not occurring in a given sequence
+ */
+
+include '../../Tests.class.php';
 
 function solution($A) {
     $sizeOfA = sizeof($A);
@@ -14,5 +20,8 @@ function solution($A) {
     return $sizeOfA + 1;
 }
 
-echo solution($A);
-echo "\n";
+$test = new Tests('MissingInteger');
+
+$A = array(1, 3, 6, 4, 1, 2);
+$result = 5;
+$test->run(array($A), $result);
