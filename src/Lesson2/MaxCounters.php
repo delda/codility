@@ -1,7 +1,12 @@
 <?php
 
-$N = 5;
-$A = array(3, 4, 4, 6, 1, 4, 4);
+/**
+ * MaxCounters
+ *
+ *  Calculate the values of counters after applying all alternating operations: increase counter by 1; set value of all counters to current maximum.
+ */
+
+include '../../Tests.class.php';
 
 function solution($N, $A) {
     $max_counter = 0;
@@ -40,5 +45,9 @@ function solution($N, $A) {
     return $B;
 }
 
-var_dump(solution($N, $A));
-echo "\n";
+$test = new Tests('MaxCounters');
+
+$N = 5;
+$A = array(3, 4, 4, 6, 1, 4, 4);
+$result = array(3, 2, 2, 4, 2);
+$test->run(array($N, $A), $result);
