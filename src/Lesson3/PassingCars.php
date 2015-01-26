@@ -1,6 +1,12 @@
 <?php
 
-$A = array(0,1,0,1,1);
+/**
+ * PassingCars
+ *
+ *  Count the number of passing cars on the road.
+ */
+
+include '../../Tests.class.php';
 
 function solution($A) {
     $sizeOfA = sizeof($A);
@@ -18,6 +24,9 @@ function solution($A) {
     return $cars_pairs;
 }
 
-echo solution($A);
-echo "\n";
+$test = new Tests('PassingCars');
+
+$A = array(0,1,0,1,1);
+$result = 5;
+$test->run(array($A), $result);
 
