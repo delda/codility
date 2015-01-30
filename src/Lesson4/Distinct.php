@@ -1,16 +1,12 @@
 <?php
 
-error_reporting(E_NOTICE);
+/**
+ * Distinct
+ *
+ *  Compute number of distinct values in an array.
+ */
 
-// example1
-// example test, positive answer
-$A = array(2,1,1,2,3,1);
-// result: 2
-
-// extreme_empty
-// empty sequence
-$A = array();
-// result: 0
+include '../../Tests.class.php';
 
 function solution($A) {
     $sizeOfA = sizeof($A);
@@ -27,7 +23,18 @@ function solution($A) {
     return $distinct;
 }
 
-echo solution($A);
-echo "\n";	
+$test = new Tests('Distinct');
+
+// example1
+// example test, positive answer
+$A = array(2, 1, 1, 2, 3, 1);
+$result = 3;
+$test->run(array($A), $result);
+
+// extreme_empty
+// empty sequence
+$A = array();
+$result = 0;
+$test->run(array($A), $result);
 
 ?>
