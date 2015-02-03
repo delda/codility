@@ -1,6 +1,12 @@
 <?php
 
-include 'Tests.class.php';
+/**
+ * Brackets
+ *
+ *  Determine whether a given string of parentheses is properly nested.
+ */
+
+include '../../Tests.class.php';
 
 function solution($A) {
     $sizeOfString = strlen($A);
@@ -12,8 +18,6 @@ function solution($A) {
             $B[$j] = $A[$i];
             $i++;
         }else{
-//            var_dump("***");
-//            var_dump("$i: $A[$i] - " .complement($A[$i]));
             if(complement($A[$i]) == $B[$j]){
                 array_pop($B);
                 if($j > 0)
@@ -53,28 +57,28 @@ $test = new Tests('Brackets');
 // example test 1
 $A = '{[()()]}';
 $result = 1;
-$test->run($A, $result);
+$test->run($A, $result, 'example1');
 
 // example2
 // example test 2
 $A = '([)()]';
 $result = 0;
-$test->run($A, $result);
+$test->run($A, $result, 'example2');
 
 // negative_match
 // invalid structures
 $A = '{{{{';
 $result = 0;
-$test->run($A, $result);
+$test->run($A, $result, 'negative_match');
 
 // empty
 // empty string
 $A = '';
 $result = 0;
-$test->run($A, $result);
+$test->run($A, $result, 'empty');
 
 // simple_grouped
 // simple grouped positive and negative test, length=22
 $A = '()(()())((()())(()()))';
-$result = 1;
-$test->run($A, $result);
+$result = 2;
+$test->run($A, $result, 'simple_grouped');
