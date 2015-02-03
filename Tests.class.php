@@ -29,11 +29,11 @@ class Tests {
     }
 
     public function run($params, $resultExpected, $title = null){
-        echo PHP_EOL;
+        echo PHP_EOL . "******** ";
         if(!$title) {
-            $title = "********** DeldaTestUnit" . PHP_EOL;
+            $title = "DeldaTestUnit" . PHP_EOL;
         }else {
-            $title = "********** $title" . PHP_EOL;
+            $title = "$title" . PHP_EOL;
         }
         echo $title;
 
@@ -54,11 +54,11 @@ class Tests {
         $endTime = microtime(true);
         $endMem = memory_get_usage();
 
-        $time = sprintf("%.06f sec.", $endTime - $startTime);
+        $time = sprintf("%.06f sec", $endTime - $startTime);
         $memory = $this->getMemoryUsage($endMem - $startMem);
 
-        echo "Time: $time;" . PHP_EOL;
-        echo "Memory: $memory" . PHP_EOL;
+        echo "Time:    $time" . PHP_EOL;
+        echo "Memory:  $memory" . PHP_EOL;
 
         $typeOfDetected = isset($resultDetected) ? gettype($resultDetected) : 'null';
         $typeOfExpected = isset($resultExpected) ? gettype($resultExpected) : 'null';
@@ -82,10 +82,12 @@ class Tests {
             $resultDetected = str_replace("\n", '', $resultDetected);
         }
 
+        echo "Result:  ";
         if($failure){
-            echo "FAILURE!" . PHP_EOL;
+            echo "FAILURE! ";
             echo $error_message . PHP_EOL;
-            echo "Expected: '$resultExpected' ($typeOfExpected); returned: '$resultDetected' ($typeOfDetected)'";
+            echo "         ";
+            echo "Expected '$resultExpected' ($typeOfExpected); returned '$resultDetected' ($typeOfDetected)";
         }else{
             echo "OK!";
         }
