@@ -80,5 +80,5 @@ $test->run($A, $result, 'empty');
 // simple_grouped
 // simple grouped positive and negative test, length=22
 $A = '()(()())((()())(()()))';
-$result = 2;
+$result = 1;
 $test->run($A, $result, 'simple_grouped');
