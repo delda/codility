@@ -1,6 +1,12 @@
 <?php
 
-include 'Tests.class.php';
+/**
+ * StoneWall
+ *
+ *  Cover "Manhattan skyline" using the minimum number of rectangles.
+ */
+
+include '../../Tests.class.php';
 
 function solution($H) {
     $size_of_H = sizeof($H);
@@ -28,4 +34,4 @@ $test = new Tests('StoneWall');
 
 $H = array(8,8,5,7,9,8,7,4,8);
 $result = 7;
-$test->run($H, $result);
+$test->run(array($H), $result);
