@@ -28,15 +28,20 @@ class Tests {
         }
     }
 
-    public function run($params, $resultExpected){
-        echo "\n";
-        echo "***** DeldaTestUnit".PHP_EOL;
+    public function run($params, $resultExpected, $title = null){
+        echo PHP_EOL;
+        if(!$title) {
+            $title = "********** DeldaTestUnit" . PHP_EOL;
+        }else {
+            $title = "********** $title" . PHP_EOL;
+        }
+        echo $title;
 
         if(!isset($params)){
-            echo "Undefined input parameters!".PHP_EOL;
+            echo "Undefined input parameters!" . PHP_EOL;
         }
         if(!isset($resultExpected)){
-            echo "Undefined result expected!".PHP_EOL;
+            echo "Undefined result expected!" . PHP_EOL;
         }
 
         $startTime = microtime(true);
@@ -52,7 +57,8 @@ class Tests {
         $time = sprintf("%.06f sec.", $endTime - $startTime);
         $memory = $this->getMemoryUsage($endMem - $startMem);
 
-        echo "Time: $time; Memory: $memory".PHP_EOL;
+        echo "Time: $time;" . PHP_EOL;
+        echo "Memory: $memory" . PHP_EOL;
 
         $typeOfDetected = isset($resultDetected) ? gettype($resultDetected) : 'null';
         $typeOfExpected = isset($resultExpected) ? gettype($resultExpected) : 'null';
@@ -77,13 +83,13 @@ class Tests {
         }
 
         if($failure){
-            echo "FAILURE!".PHP_EOL;
-            echo $error_message.PHP_EOL;
+            echo "FAILURE!" . PHP_EOL;
+            echo $error_message . PHP_EOL;
+            echo "Expected: '$resultExpected' ($typeOfExpected); returned: '$resultDetected' ($typeOfDetected)'";
         }else{
-            echo "OK!".PHP_EOL;
+            echo "OK!";
         }
-        echo "Expected: '$resultExpected' ($typeOfExpected); returned: '$resultDetected' ($typeOfDetected)'";
-        echo PHP_EOL.PHP_EOL.PHP_EOL;
+        echo PHP_EOL.PHP_EOL;
     }
 
     public function getMemoryUsage($size){
