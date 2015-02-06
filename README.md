@@ -36,16 +36,18 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 * [EquiLeader]
 
 
+
 [codility site hp]:          https://codility.com/
 [codility site lessons]:     https://codility.com/programmers/lessons/
 [codility site challengers]: https://codility.com/programmers/challenges/
 
-[time complexity]:           https://codility.com/programmers/lessons/1
-[counting elements]:         https://codility.com/programmers/lessons/2
-[prefix sums]:               https://codility.com/programmers/lessons/3
-[sorting]:                   https://codility.com/programmers/lessons/4
-[stacks and queues]:         https://codility.com/programmers/lessons/5
-[leader]:                    https://codility.com/programmers/lessons/6
+[time complexity]:           https://github.com/delda/codility/tree/master/src/Lesson1
+[counting elements]:         https://github.com/delda/codility/tree/master/src/Lesson2
+[prefix sums]:               https://github.com/delda/codility/tree/master/src/Lesson3
+[sorting]:                   https://github.com/delda/codility/tree/master/src/Lesson4
+[stacks and queues]:         https://github.com/delda/codility/tree/master/src/Lesson5
+[leader]:                    https://github.com/delda/codility/tree/master/src/Lesson6
+[maximum slice problem]:     https://github.com/delda/codility/tree/master/src/Lesson7
 
 [TapeEquilibrium]:           https://github.com/delda/codility/blob/master/src/Lesson1/TapeEquilibrium.php
 [FrogJmp]:                   https://github.com/delda/codility/blob/master/src/Lesson1/FrogJmp.php
@@ -68,3 +70,6 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 [Fish]:                      https://github.com/delda/codility/blob/master/src/Lesson5/Fish.php
 [Dominator]:                 https://github.com/delda/codility/blob/master/src/Lesson6/Dominator.php
 [EquiLeader]:                https://github.com/delda/codility/blob/master/src/Lesson6/EquiLeader.php
+[MaxProfit]:                 https://github.com/delda/codility/blob/master/src/Lesson7/MaxProfit.php
+[MaxSliceSum]:               https://github.com/delda/codility/blob/master/src/Lesson7/MaxSliceSum.php
+[MaxDoubleSliceSum]:         https://github.com/delda/codility/blob/master/src/Lesson7/MaxDoubleSliceSum.php
