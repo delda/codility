@@ -35,7 +35,10 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 * [Dominator]
 * [EquiLeader]
 
-
+##### Lesson 7: [Maximum slice problem][maximum slice problem]
+* [MaxProfit]
+* [MaxSliceSum]
+* [MaxDoubleSliceSum]
 
 [codility site hp]:          https://codility.com/
 [codility site lessons]:     https://codility.com/programmers/lessons/
