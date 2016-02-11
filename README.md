@@ -3,6 +3,9 @@
 
 In this repository you can find my answers to [Codility][codility site hp] [lessons][codility site lessons] and [challengers][codility site challengers] written in PHP.
 
+##### Lesson 1: [Iterations][iterations]
+* [BinaryGap]
+
 ##### Lesson 1: [Time Complexity][time complexity]
 * [TapeEquilibrium]
 * [FrogJmp]
@@ -44,6 +47,8 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 [codility site lessons]:     https://codility.com/programmers/lessons/
 [codility site challengers]: https://codility.com/programmers/challenges/
 
+[iterations]:                https://github.com/delda/codility/tree/master/src/Lesson1
+
 [time complexity]:           https://github.com/delda/codility/tree/master/src/Lesson1
 [counting elements]:         https://github.com/delda/codility/tree/master/src/Lesson2
 [prefix sums]:               https://github.com/delda/codility/tree/master/src/Lesson3
@@ -51,6 +56,8 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 [stacks and queues]:         https://github.com/delda/codility/tree/master/src/Lesson5
 [leader]:                    https://github.com/delda/codility/tree/master/src/Lesson6
 [maximum slice problem]:     https://github.com/delda/codility/tree/master/src/Lesson7
+
+[BinaryGap]:                 https://github.com/delda/codility/blob/master/src/Lesson1/BinaryGap.php
 
 [TapeEquilibrium]:           https://github.com/delda/codility/blob/master/src/Lesson1/TapeEquilibrium.php
 [FrogJmp]:                   https://github.com/delda/codility/blob/master/src/Lesson1/FrogJmp.php
