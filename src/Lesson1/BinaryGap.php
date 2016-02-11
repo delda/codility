@@ -13,14 +13,14 @@ function solution($A) {
     $maxGap = 0;
     $gap = 0;
     while($A > 0){
-        if((int)($A/2) == (int)(($A+1)/2)){
-            $A = (int)($A/2);
+        if($A % 2 == 0){
+            $A = (int)($A / 2);
         }else{
             break;
         }
     }
     while($A > 0){
-        $gap = ((int)($A/2) == (int)(($A+1)/2)) ? $gap+1 : 0;
+        $gap = ($A % 2 == 0) ? $gap + 1 : 0;
         $maxGap = ($maxGap < $gap) ? $gap : $maxGap;
         $A = (int)($A / 2);
     }
