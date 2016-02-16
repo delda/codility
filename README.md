@@ -6,10 +6,8 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 ##### Lesson 1: [Iterations][iterations]
 * [BinaryGap]
 
-##### Lesson 1: [Time Complexity][time complexity]
-* [TapeEquilibrium]
-* [FrogJmp]
-* [PermMissingElem]
+##### Lesson 2: [Arrays][arrays]
+* [CyclicRotation]
 
 ##### Lesson 2: [Counting Elements][counting elements]
 * [PermCheck]
@@ -47,7 +45,9 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 [codility site lessons]:     https://codility.com/programmers/lessons/
 [codility site challengers]: https://codility.com/programmers/challenges/
 
+
 [iterations]:                https://github.com/delda/codility/tree/master/src/Lesson1
+[arrays]:                    https://github.com/delda/codility/tree/master/src/Lesson2
 
 [time complexity]:           https://github.com/delda/codility/tree/master/src/Lesson1
 [counting elements]:         https://github.com/delda/codility/tree/master/src/Lesson2
@@ -57,7 +57,9 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 [leader]:                    https://github.com/delda/codility/tree/master/src/Lesson6
 [maximum slice problem]:     https://github.com/delda/codility/tree/master/src/Lesson7
 
+
 [BinaryGap]:                 https://github.com/delda/codility/blob/master/src/Lesson1/BinaryGap.php
+[CyclicRotation]:            https://github.com/delda/codility/blob/master/src/Lesson2/CyclicRotation.php
 
 [TapeEquilibrium]:           https://github.com/delda/codility/blob/master/src/Lesson1/TapeEquilibrium.php
 [FrogJmp]:                   https://github.com/delda/codility/blob/master/src/Lesson1/FrogJmp.php
