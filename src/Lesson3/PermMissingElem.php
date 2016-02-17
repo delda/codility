@@ -17,7 +17,7 @@ function solution($A) {
 
     return intval($sumOfValues);
 }
-
+ 
 $test = new Tests('PermMissingElem');
 
 $A = array(2,3,1,5);
