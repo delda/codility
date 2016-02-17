@@ -8,38 +8,45 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 
 ##### Lesson 2: [Arrays][arrays]
 * [CyclicRotation]
+* []
 
-##### Lesson 2: [Counting Elements][counting elements]
+##### Lesson 3: [Time complexity][time complexity]
+* [TapeEquilibrium]
+* [FrogJmp]
+* [PermMissingElem]
+
+##### Lesson 4: [Counting Elements][counting elements]
 * [PermCheck]
 * [FrogRiverOne]
 * [MissingInteger]
 * [MaxCounters]
 
-##### Lesson 3: [Prefix Sums][prefix sums]
-* [PassingCars]
-* [MinAvgTwoSlice]
+##### Lesson 5: [Prefix Sums][prefix sums]
 * [CountDiv]
+* [PassingCars]
 * [GenomicRangeQuery]
+* [MinAvgTwoSlice]
 
-##### Lesson 4: [Sorting][sorting]
-* [MaxProductOfThree]
-* [Triangle]
+##### Lesson 6: [Sorting][sorting]
 * [Distinct]
+* [Triangle]
+* [MaxProductOfThree]
 
-##### Lesson 5: [Stacks and Queues][stacks and queues]
+##### Lesson 7: [Stacks and Queues][stacks and queues]
 * [Brackets]
+* [Fish]
 * [Nesting]
 * [StoneWall]
-* [Fish]
 
-##### Lesson 6: [Leader][leader]
+##### Lesson 8: [Leader][leader]
 * [Dominator]
 * [EquiLeader]
 
-##### Lesson 7: [Maximum slice problem][maximum slice problem]
+##### Lesson 9: [Maximum slice problem][maximum slice problem]
+* [MaxDoubleSliceSum]
 * [MaxProfit]
 * [MaxSliceSum]
-* [MaxDoubleSliceSum]
+
 
 [codility site hp]:          https://codility.com/
 [codility site lessons]:     https://codility.com/programmers/lessons/
@@ -48,40 +55,39 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 
 [iterations]:                https://github.com/delda/codility/tree/master/src/Lesson1
 [arrays]:                    https://github.com/delda/codility/tree/master/src/Lesson2
-
-[time complexity]:           https://github.com/delda/codility/tree/master/src/Lesson1
-[counting elements]:         https://github.com/delda/codility/tree/master/src/Lesson2
-[prefix sums]:               https://github.com/delda/codility/tree/master/src/Lesson3
-[sorting]:                   https://github.com/delda/codility/tree/master/src/Lesson4
-[stacks and queues]:         https://github.com/delda/codility/tree/master/src/Lesson5
-[leader]:                    https://github.com/delda/codility/tree/master/src/Lesson6
-[maximum slice problem]:     https://github.com/delda/codility/tree/master/src/Lesson7
+[time complexity]:           https://github.com/delda/codility/tree/master/src/Lesson3
+[counting elements]:         https://github.com/delda/codility/tree/master/src/Lesson4
+[prefix sums]:               https://github.com/delda/codility/tree/master/src/Lesson5
+[sorting]:                   https://github.com/delda/codility/tree/master/src/Lesson6
+[stacks and queues]:         https://github.com/delda/codility/tree/master/src/Lesson7
+[leader]:                    https://github.com/delda/codility/tree/master/src/Lesson8
+[maximum slice problem]:     https://github.com/delda/codility/tree/master/src/Lesson9
 
 
 [BinaryGap]:                 https://github.com/delda/codility/blob/master/src/Lesson1/BinaryGap.php
 [CyclicRotation]:            https://github.com/delda/codility/blob/master/src/Lesson2/CyclicRotation.php
-
-[TapeEquilibrium]:           https://github.com/delda/codility/blob/master/src/Lesson1/TapeEquilibrium.php
-[FrogJmp]:                   https://github.com/delda/codility/blob/master/src/Lesson1/FrogJmp.php
-[PermMissingElem]:           https://github.com/delda/codility/blob/master/src/Lesson1/PermMissingElem.php 
-[PermCheck]:                 https://github.com/delda/codility/blob/master/src/Lesson2/PermCheck.php
-[FrogRiverOne]:              https://github.com/delda/codility/blob/master/src/Lesson2/FrogRiverOne.php
-[MissingInteger]:            https://github.com/delda/codility/blob/master/src/Lesson2/MissingInteger.php
-[MaxCounters]:               https://github.com/delda/codility/blob/master/src/Lesson2/MaxCounters.php
-[PassingCars]:               https://github.com/delda/codility/blob/master/src/Lesson3/PassingCars.php
-[MinAvgTwoSlice]:            https://github.com/delda/codility/blob/master/src/Lesson3/MinAvgTwoSlice.php
-[CountDiv]:                  https://github.com/delda/codility/blob/master/src/Lesson3/CountDiv.php
-[GenomicRangeQuery]:         https://github.com/delda/codility/blob/master/src/Lesson3/GenomicRangeQuery.php
-[MaxProductOfThree]:         https://github.com/delda/codility/blob/master/src/Lesson4/MaxProductOfThree.php
-[Triangle]:                  https://github.com/delda/codility/blob/master/src/Lesson4/Triangle.php
-[Distinct]:                  https://github.com/delda/codility/blob/master/src/Lesson4/Distinct.php
-[NumberOfDiscIntersections]: https://github.com/delda/codility/blob/master/src/Lesson4/NumberOfDiscIntersections.php
+[OddOccurrencesInArray]:     https://github.com/delda/codility/blob/master/src/Lesson2/OddOccurrencesInArray.php
+[TapeEquilibrium]:           https://github.com/delda/codility/blob/master/src/Lesson3/TapeEquilibrium.php
+[FrogJmp]:                   https://github.com/delda/codility/blob/master/src/Lesson3/FrogJmp.php
+[PermMissingElem]:           https://github.com/delda/codility/blob/master/src/Lesson3/PermMissingElem.php 
+[PermCheck]:                 https://github.com/delda/codility/blob/master/src/Lesson4/PermCheck.php
+[FrogRiverOne]:              https://github.com/delda/codility/blob/master/src/Lesson4/FrogRiverOne.php
+[MissingInteger]:            https://github.com/delda/codility/blob/master/src/Lesson4/MissingInteger.php
+[MaxCounters]:               https://github.com/delda/codility/blob/master/src/Lesson4/MaxCounters.php
+[PassingCars]:               https://github.com/delda/codility/blob/master/src/Lesson5/PassingCars.php
+[MinAvgTwoSlice]:            https://github.com/delda/codility/blob/master/src/Lesson5/MinAvgTwoSlice.php
+[CountDiv]:                  https://github.com/delda/codility/blob/master/src/Lesson5/CountDiv.php
+[GenomicRangeQuery]:         https://github.com/delda/codility/blob/master/src/Lesson5/GenomicRangeQuery.php
+[MaxProductOfThree]:         https://github.com/delda/codility/blob/master/src/Lesson6/MaxProductOfThree.php
+[Triangle]:                  https://github.com/delda/codility/blob/master/src/Lesson6/Triangle.php
+[Distinct]:                  https://github.com/delda/codility/blob/master/src/Lesson6/Distinct.php
+[NumberOfDiscIntersections]: https://github.com/delda/codility/blob/master/src/Lesson6/NumberOfDiscIntersections.php
 [Brackets]:                  https://github.com/delda/codility/blob/master/src/Lesson5/Brackets.php
 [Nesting]:                   https://github.com/delda/codility/blob/master/src/Lesson5/Nesting.php
 [StoneWall]:                 https://github.com/delda/codility/blob/master/src/Lesson5/StoneWall.php
 [Fish]:                      https://github.com/delda/codility/blob/master/src/Lesson5/Fish.php
 [Dominator]:                 https://github.com/delda/codility/blob/master/src/Lesson6/Dominator.php
 [EquiLeader]:                https://github.com/delda/codility/blob/master/src/Lesson6/EquiLeader.php
-[MaxProfit]:                 https://github.com/delda/codility/blob/master/src/Lesson7/MaxProfit.php
-[MaxSliceSum]:               https://github.com/delda/codility/blob/master/src/Lesson7/MaxSliceSum.php
-[MaxDoubleSliceSum]:         https://github.com/delda/codility/blob/master/src/Lesson7/MaxDoubleSliceSum.php
+[MaxDoubleSliceSum]:         https://github.com/delda/codility/blob/master/src/Lesson9/MaxDoubleSliceSum.php
+[MaxProfit]:                 https://github.com/delda/codility/blob/master/src/Lesson9/MaxProfit.php
+[MaxSliceSum]:               https://github.com/delda/codility/blob/master/src/Lesson9/MaxSliceSum.php
