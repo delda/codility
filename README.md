@@ -8,7 +8,7 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 
 ##### Lesson 2: [Arrays][arrays]
 * [CyclicRotation]
-* []
+* [OddOccurrencesInArray]
 
 ##### Lesson 3: [Time complexity][time complexity]
 * [TapeEquilibrium]
