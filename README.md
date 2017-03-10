@@ -49,7 +49,17 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 
 ##### Lesson 10: [Prime and composite numbers][prime and composite numbers]
 * [MinPerimeterRectangle]
+* [CountFactors]
+* [Peaks]
+* [Flags]
 
+##### Lesson 11: [Sieve of Eratosthenes][sieve of eratosthenes]
+* [CountSemiprimes]
+* [CountNonDivisible]
+
+##### Lesson 12: [Euclidean algorithm][euclidean algorithm]
+* [ChocolatesByNumbers]
+* [CommonPrimeDivisors]
 
 
 [codility site hp]:            https://codility.com/
@@ -66,7 +76,9 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 [stacks and queues]:           https://github.com/delda/codility/tree/master/src/Lesson7
 [leader]:                      https://github.com/delda/codility/tree/master/src/Lesson8
 [maximum slice problem]:       https://github.com/delda/codility/tree/master/src/Lesson9
-[prime and composite numbers]: https://github.com/delda/codility/tree/master/src/Lesson10 
+[prime and composite numbers]: https://github.com/delda/codility/tree/master/src/Lesson10
+[sieve of eratosthenes]:       https://github.com/delda/codility/tree/master/src/Lesson11
+[euclidean algorithm]:         https://github.com/delda/codility/tree/master/src/Lesson12
 
 
 [BinaryGap]:                   https://github.com/delda/codility/blob/master/src/Lesson1/BinaryGap.php
@@ -97,3 +109,10 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 [MaxProfit]:                   https://github.com/delda/codility/blob/master/src/Lesson9/MaxProfit.php
 [MaxSliceSum]:                 https://github.com/delda/codility/blob/master/src/Lesson9/MaxSliceSum.php
 [MinPerimeterRectangle]:       https://github.com/delda/codility/blob/master/src/Lesson10/MinPerimeterRectangle.php
+[CountFactors]:                https://github.com/delda/codility/blob/master/src/Lesson10/CountFactors.php
+[Peaks]:                       https://github.com/delda/codility/blob/master/src/Lesson10/Peaks.php
+[Flags]:                       https://github.com/delda/codility/blob/master/src/Lesson10/Flags.php
+[CountSemiprimes]:             https://github.com/delda/codility/blob/master/src/Lesson11/CountSemiprimes.php
+[CountNonDivisible]:           https://github.com/delda/codility/blob/master/src/Lesson11/CountNonDivisible.php
+[ChocolatesByNumbers]:         https://github.com/delda/codility/blob/master/src/Lesson12/ChocolatesByNumbers.php
+[CommonPrimeDivisors]:         https://github.com/delda/codility/blob/master/src/Lesson12/CommonPrimeDivisors.php
