@@ -61,6 +61,14 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 * [ChocolatesByNumbers]
 * [CommonPrimeDivisors]
 
+##### Lesson 13: [Fibonacci numbers][fibonacci numbers]
+* [Ladder]
+* [FibFrog]
+
+##### Lesson 14: [Binary search algorithm][binary search algorithm]
+* [MinMaxDivision]
+* [NailingPlanks]
+
 
 [codility site hp]:            https://codility.com/
 [codility site lessons]:       https://codility.com/programmers/lessons/
@@ -79,6 +87,8 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 [prime and composite numbers]: https://github.com/delda/codility/tree/master/src/Lesson10
 [sieve of eratosthenes]:       https://github.com/delda/codility/tree/master/src/Lesson11
 [euclidean algorithm]:         https://github.com/delda/codility/tree/master/src/Lesson12
+[fibonacci numbers]:           https://github.com/delda/codility/tree/master/src/Lesson13
+[binary search algorithm]:     https://github.com/delda/codility/tree/master/src/Lesson14
 
 
 [BinaryGap]:                   https://github.com/delda/codility/blob/master/src/Lesson1/BinaryGap.php
@@ -116,3 +126,7 @@ In this repository you can find my answers to [Codility][codility site hp] [less
 [CountNonDivisible]:           https://github.com/delda/codility/blob/master/src/Lesson11/CountNonDivisible.php
 [ChocolatesByNumbers]:         https://github.com/delda/codility/blob/master/src/Lesson12/ChocolatesByNumbers.php
 [CommonPrimeDivisors]:         https://github.com/delda/codility/blob/master/src/Lesson12/CommonPrimeDivisors.php
+[Ladder]:                      https://github.com/delda/codility/blob/master/src/Lesson13/Ladder.php
+[FibFrog]:                     https://github.com/delda/codility/blob/master/src/Lesson13/FibFrog.php
+[MinMaxDivision]:              https://github.com/delda/codility/blob/master/src/Lesson14/MinMaxDivision.php
+[NailingPlanks]:               https://github.com/delda/codility/blob/master/src/Lesson14/NailingPlanks.php
